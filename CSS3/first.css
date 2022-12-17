@@ -1,0 +1,38 @@
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    color: rgb(12, 12, 119); /* cor da letra*/
+    font-family: verdana;
+    font-size: 250%;
+    background-color: orange; /*cor de fundo*/
+    opacity: 80%;
+    border: 2px solid; /*borda fina*/
+    margin: 50px; /*define a margem externa*/
+    text-align: center;
+    padding: 20px; /*define a margem interna*/
+}
+
+#pv { /*chamada por id*/
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 160%;
+}
+#bloco {
+    position: absolute;
+    height: 200px;
+}
+#menu {
+    background-color: aqua;
+    width: 175px;
+    height: 150px;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    float: right;
+}
+#moto {
+    width: 500px;
+    height: 300px;
+    display: flex;
+}
