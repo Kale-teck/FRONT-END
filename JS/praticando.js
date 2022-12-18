@@ -1,6 +1,7 @@
-canva = document.querySelector('canvas')
-pincel = canva.getContext('2d')
-var cor = 'blue'
+canva = document.querySelector('canvas');
+pincel = canva.getContext('2d');
+var cor = 'blue';
+var contador = 0;
 function pintaQuadrado() {
     pincel.fillStyle = cor;
     pincel.beginPath();
@@ -8,13 +9,14 @@ function pintaQuadrado() {
     mudaCor();
 }
 function mudaCor() {
-    if (cor == 'blue') {
-        cor = 'yellow';
-    } else {
-        cor = 'blue';
+    cores = ['blue', 'green', 'yellow', 'red', 'grey', 'orange', 'purple', 'black', 'pink', 'brown'];
+    if (contador < 10) {
+        cor = cores[contador];
+        contador++;
+        if (contador == 10) {
+            contador = 0;
+        }
     }
-    return cor;
 }
 
-setInterval(pintaQuadrado, 1000);
-
+setInterval(pintaQuadrado, 1000)
